@@ -37,7 +37,7 @@ export default StyleSheet.create({
   title: {
     fontSize: 20,
     marginBottom: 4,
-    marginTop: -140,
+    marginTop: -170,
     color: '#fff',
     fontWeight: 'bold'
   },
@@ -50,14 +50,14 @@ export default StyleSheet.create({
   },
 
   lista: {
-    marginTop: 20,
+    marginTop: 30,
     marginHorizontal: 10,
     marginEnd: 10,
   },
 
   form: {
     marginTop: 5,
-    paddingHorizontal: 15,
+    position: 'relative',
   },
 
   input: {

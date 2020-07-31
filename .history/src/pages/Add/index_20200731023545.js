@@ -30,9 +30,9 @@ export default function Add() {
           <Text style={styles.description}>Adicione todos os detalhes importantes do AP ou casa</Text>
 
           <FlatList
-            data={[1]}
-            style={styles.lista}
-            keyExtractor={form => String(form)}
+            data={[1, 2, 3, 4, 5]}
+            style={styles.apList}
+            keyExtractor={ap => String(ap)}
             renderItem={() => (
 
               <Form style={styles.form} ref={formRef} onSubmit={handleSubmit}>
@@ -49,16 +49,19 @@ export default function Add() {
                   <Picker.Item label="Rodoviária" value="rodoviaria" />
                   <Picker.Item label="Planalto Universitário" value="planalto" />
                   <Picker.Item label="Campo Novo" value="campo-novo" />
-
+                  <Picker.Item label="Campo Novo" value="campo-novo" />
+                  <Picker.Item label="Campo Novo" value="campo-novo" />
+                  <Picker.Item label="Campo Novo" value="campo-novo" />
+                  <Picker.Item label="Campo Novo" value="campo-novo" />
                 </Picker>
 
                 <Input placeholder="Tamanho aproximado (m²)" style={styles.input} name="tamanho" type="text" />
                 <Input placeholder="Valor total do aluguel" style={styles.input} name="valor-total" type="text" />
                 <Input placeholder="Valor dividido por morador" style={styles.input} name="valor-dividido" type="text" />
-                <Input placeholder="Quantidade de quartos" style={styles.input} name="quartos" type="upload" />
-            <Input placeholder="Quantidade de banheiros" style={styles.input} name="banheiros" type="upload" />
+                {/* <Input placeholder="Quantidade de quartos" style={styles.input} name="quartos" type="upload" />
+            <Input placeholder="Quantidade de banheiros" style={styles.input} name="banheiros" type="upload" /> */}
                 <Input placeholder="Selecionar foto do interior do imóvel" style={styles.input} name="foto" type="upload" />
-                <Input placeholder="Possui varanda" style={styles.input} name="varanda" type="upload" />
+                {/* <Input placeholder="Possui varanda" style={styles.input} name="varanda" type="upload" /> */}
 
                 <TouchableOpacity
                   style={styles.botao}

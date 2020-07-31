@@ -57,7 +57,8 @@ export default StyleSheet.create({
 
   form: {
     marginTop: 5,
-    paddingHorizontal: 15,
+    padding: 10,
+    position: 'relative',
   },
 
   input: {

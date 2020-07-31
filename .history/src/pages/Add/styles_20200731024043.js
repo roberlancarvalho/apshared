@@ -50,14 +50,14 @@ export default StyleSheet.create({
   },
 
   lista: {
-    marginTop: 20,
+    marginTop: 40,
     marginHorizontal: 10,
     marginEnd: 10,
   },
 
   form: {
     marginTop: 5,
-    paddingHorizontal: 15,
+    position: 'relative',
   },
 
   input: {

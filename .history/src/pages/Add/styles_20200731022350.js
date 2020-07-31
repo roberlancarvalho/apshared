@@ -37,7 +37,7 @@ export default StyleSheet.create({
   title: {
     fontSize: 20,
     marginBottom: 4,
-    marginTop: -140,
+    marginTop: -170,
     color: '#fff',
     fontWeight: 'bold'
   },
@@ -49,15 +49,9 @@ export default StyleSheet.create({
     marginHorizontal: 10,
   },
 
-  lista: {
-    marginTop: 20,
-    marginHorizontal: 10,
-    marginEnd: 10,
-  },
-
   form: {
     marginTop: 5,
-    paddingHorizontal: 15,
+    position: 'relative',
   },
 
   input: {
@@ -74,10 +68,9 @@ export default StyleSheet.create({
   selecao: {
     height: 40,
     width: 340,
-    color: '#fff',
+    color: '#272e39',
     padding: 5,
-    marginTop: 5,
-    // backgroundColor: '#62b0d3',
+    backgroundColor: '#fff',
   },
 
   botao: {
@@ -85,7 +78,6 @@ export default StyleSheet.create({
     height: 40,
     backgroundColor: '#62b0d3',
     marginTop: 10,
-    marginVertical: 60,
     borderRadius: 3,
     alignItems: 'center',
     justifyContent: 'center',
