@@ -52,11 +52,11 @@ export default StyleSheet.create({
 
   sobre:{
     flexWrap: "wrap",
-    flexDirection: 'row',
-    // justifyContent: 'space-between',
+    // flexDirection: 'row',
+    // justifyContent: 'space-around',
     marginTop: 5,
     marginBottom: 1,
-    // marginHorizontal: 5,
+    marginHorizontal: 5,
   },
 
   apPropriedade: {

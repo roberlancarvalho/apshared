@@ -53,7 +53,7 @@ export default StyleSheet.create({
   sobre:{
     flexWrap: "wrap",
     flexDirection: 'row',
-    // justifyContent: 'space-between',
+    justifyContent: 'space-between',
     marginTop: 5,
     marginBottom: 1,
     // marginHorizontal: 5,
