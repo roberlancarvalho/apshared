@@ -38,28 +38,30 @@ export default StyleSheet.create({
   title: {
     fontSize: 20,
     marginBottom: 4,
-    marginTop: -150,
+    marginTop: 200,
     color: '#fff',
     fontWeight: 'bold'
   },
 
   avatar: {
     position: 'absolute',
-    width: 110, 
-    height: 110, 
-    borderRadius: 400/ 2,
+    marginTop: 200,
+    width: 110,
+    height: 110,
+    borderRadius: 400 / 2,
   },
 
-  sobre:{
+  sobre: {
     alignItems: 'center',
-    marginTop: 5,
+    marginTop: 280,
+    marginBottom: 10,
   },
 
   propriedade: {
     fontSize: 16,
     color: '#fff',
     fontWeight: 'bold',
-    
+
   },
 
   valor: {
@@ -67,5 +69,39 @@ export default StyleSheet.create({
     color: '#fff',
     marginBottom: 2,
 
+  },
+
+  botaoSeguir: {
+    width: 340,
+    height: 42,
+    backgroundColor: '#62b0d3',
+    marginTop: 10,
+    borderRadius: 3,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'row',
+  },
+
+  botaoEnviar: {
+    width: 340,
+    height: 42,
+    backgroundColor: '#3D4859', // #c5d6e0
+    marginTop: 10,
+    borderRadius: 3,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'row',
+  },
+
+  botaoText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#fff',
+  },
+
+  icone: {
+    marginHorizontal: 10,
+    fontSize: 22,
+    color: 'white'
   },
 })

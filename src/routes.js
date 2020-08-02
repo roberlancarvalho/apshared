@@ -11,6 +11,7 @@ import Buscar from './pages/Buscar'
 import Add from './pages/Add'
 import Perfil from './pages/Perfil'
 import Config from './pages/Config'
+import Mensagem from './pages/Mensagem'
 import Login from './pages/Login'
 import Detalhes from './pages/Detalhes'
 
@@ -42,6 +43,9 @@ export default function Routes() {
               else if (route.name === 'Login') {
                 iconName = focused ? 'ios-settings' : 'ios-settings';
               }
+              else if (route.name === 'Mensagem') {
+                iconName = focused ? 'ios-settings' : 'ios-settings';
+              }
 
               return <Ionicons name={iconName} size={32} color={color} />;
             },
@@ -57,8 +61,9 @@ export default function Routes() {
           <Tab.Screen name="Adicionar" component={Add} />
           <Tab.Screen name="Perfil" component={Perfil} />
           <Tab.Screen name="Configurações" component={Config} />
+          {/* <Tab.Screen name="Mensagem" component={Mensagem} /> */}
           {/* <Tab.Screen name="Detalhes" component={Detalhes} /> */}
-          {/* <Tab.Screen name="Login" component={Login} /> */}
+          <Tab.Screen name="Login" component={Login} />
         </Tab.Navigator>
       </NavigationContainer>
 

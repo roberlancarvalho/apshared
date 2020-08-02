@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 import {
   Alert,
@@ -9,14 +8,13 @@ import {
   TouchableOpacity,
   ImageBackground
 } from 'react-native'
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign, Feather } from '@expo/vector-icons';
 // import PasswordInputText from 'react-native-hide-show-password-input';
 import styles from './styles'
 export default class Login extends Component {
 
   logar = () => {
     Alert.alert("AP Shared", "Login realizado com sucesso")
-
   }
 
   render() {
@@ -42,11 +40,14 @@ export default class Login extends Component {
               placeholder="Insira seu e-mail"
             />
 
-            <TextInput
-              style={styles.input}
-              secureTextEntry={true}
-              placeholder="Insira sua senha"
-            />
+            <View style={styles.inputSenha}>
+              <TextInput
+                style={styles.input}
+                secureTextEntry={true}
+                placeholder="Insira sua senha"
+              />
+              {/* <Feather style={styles.senhaIcon} name="eye-off" size={20} color="black" /> */}
+            </View>
 
             <View style={styles.links}>
               <TouchableOpacity

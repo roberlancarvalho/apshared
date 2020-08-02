@@ -58,7 +58,17 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
     fontSize: 16,
     borderRadius: 3,
+    paddingLeft: 0,
+
   },
+
+  // inputSenha: {
+  //   flex: 1,
+  //   flexDirection: 'row',
+  //   justifyContent: 'center',
+  //   alignItems: 'center',
+  //   backgroundColor: '#fff'
+  // },
 
   recuperar: {
     paddingBottom: 10,

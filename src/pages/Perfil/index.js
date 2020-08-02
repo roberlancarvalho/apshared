@@ -1,10 +1,18 @@
 import React from 'react'
-import { View, Text, Image, ImageBackground, TextInput, TouchableOpacity } from 'react-native'
+import { Alert, View, Text, Image, ImageBackground, TouchableOpacity } from 'react-native'
+import { Ionicons, Entypo } from '@expo/vector-icons';
 // import { FontAwesome } from '@expo/vector-icons';
 
 import styles from './styles'
 
 export default function Perfil() {
+  seguir = () => {
+    Alert.alert("Você está seguindo Roberlan agora")
+  }
+  enviarMensagem = () => {
+    Alert.alert("Enviar mensagem para Roberlan")
+  }
+
   return (
     <>
       <View style={styles.container}>
@@ -14,13 +22,13 @@ export default function Perfil() {
         <ImageBackground style={styles.imgBackground}
           resizeMode='cover'
           source={require('../../assets/ap.png')}>
+          <View style={styles.conteudo}>
+            <Text style={styles.title}>Perfil de usuário</Text>
+          </View>
         </ImageBackground>
 
+        <Image source={require('../../assets/avatar.jpg')} style={styles.avatar} />
 
-        <View style={styles.conteudo}>
-          <Text style={styles.title}>Perfil de usuário</Text>
-          <Image source={require('../../assets/avatar.jpg')} style={styles.avatar} />
-        </View>
 
         <View style={styles.sobre}>
           <Text style={styles.propriedade}>Nome:</Text>
@@ -37,7 +45,27 @@ export default function Perfil() {
 
           <Text style={styles.propriedade}>Cidade de origem:</Text>
           <Text style={styles.valor}>Mombaça-CE</Text>
+
+          <TouchableOpacity
+            style={styles.botaoSeguir}
+            onPress={() => { this.seguir() }}
+          >
+            <Entypo style={styles.icone} name="edit" />
+            <Text style={styles.botaoText}>EDITAR INFORMAÇÕES
+            
+            </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={styles.botaoEnviar}
+            onPress={() => { this.enviarMensagem() }}
+          >
+          <Ionicons style={styles.icone} name="md-chatboxes" />
+            <Text style={styles.botaoText}>MINHAS MENSAGENS
+            </Text>
+          </TouchableOpacity>
         </View>
+
 
       </View>
 
