@@ -2,7 +2,15 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator({
+  Detalhes: {
+    screen: Detalhes, 
+    navigationOptions: {
+        header: null,
+    },
+},
+
+  });
 
 import Login from './pages/Login'
 import Detalhes from './pages/Detalhes'

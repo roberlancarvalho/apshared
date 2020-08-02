@@ -11,8 +11,11 @@ import {
 } from 'react-native'
 import { AntDesign } from '@expo/vector-icons';
 // import PasswordInputText from 'react-native-hide-show-password-input';
+
 import styles from './styles'
+
 export default class Login extends Component {
+
 
   logar = () => {
     Alert.alert("AP Shared", "Login realizado com sucesso")
@@ -22,6 +25,10 @@ export default class Login extends Component {
   render() {
     return (
       <>
+      
+        <Stack.Navigator>
+          <Stack.Screen name="Login" component={Login} />
+        </Stack.Navigator>
 
         <View style={styles.container} >
 

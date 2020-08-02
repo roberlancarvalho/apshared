@@ -1,10 +1,12 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import { Ionicons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
 import Home from './pages/Home'
 import Buscar from './pages/Buscar'
@@ -43,7 +45,7 @@ export default function Routes() {
                 iconName = focused ? 'ios-settings' : 'ios-settings';
               }
 
-              return <Ionicons name={iconName} size={32} color={color} />;
+              return <Ionicons name={iconName} size={35} color={color} />;
             },
           })}
           tabBarOptions={{
@@ -60,6 +62,10 @@ export default function Routes() {
           {/* <Tab.Screen name="Detalhes" component={Detalhes} /> */}
           {/* <Tab.Screen name="Login" component={Login} /> */}
         </Tab.Navigator>
+
+        <Stack.Navigator>
+          <Stack.Screen name="Detalhes" component={Detalhes} />
+        </Stack.Navigator>
       </NavigationContainer>
 
       {/* <NavigationContainer>

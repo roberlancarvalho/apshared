@@ -2,6 +2,7 @@ import React from 'react'
 import { AntDesign } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native'
 import { View, FlatList, Image, Text, TouchableOpacity } from 'react-native'
+import Navigation from '../../navigation'
 
 import logoImg from '../../assets/logo.png'
 import apImg from '../../assets/aps/ap1.png'
@@ -17,6 +18,8 @@ export default function Home() {
 
   return (
     <>
+      <Navigation />
+
       <View style={styles.container}>
         <View style={styles.header}>
           <Image style={styles.logo} source={logoImg} />

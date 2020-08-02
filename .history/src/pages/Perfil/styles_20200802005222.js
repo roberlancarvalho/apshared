@@ -58,8 +58,7 @@ export default StyleSheet.create({
   propriedade: {
     fontSize: 16,
     color: '#fff',
-    fontWeight: 'bold',
-    
+    fontWeight: 'bold'
   },
 
   valor: {

@@ -6,7 +6,6 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: '#272e39',
     alignItems: 'center',
-    justifyContent: 'space-between',
     paddingTop: Constants.statusBarHeight + 16,
   },
 
@@ -45,27 +44,32 @@ export default StyleSheet.create({
 
   avatar: {
     position: 'absolute',
+    marginTop: 200,
     width: 110, 
     height: 110, 
     borderRadius: 400/ 2,
   },
 
   sobre:{
-    alignItems: 'center',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    alignItems: 'flex-end',
     marginTop: 5,
+    marginBottom: 1,
+    marginHorizontal: 5,
   },
 
-  propriedade: {
+  apPropriedade: {
     fontSize: 16,
     color: '#fff',
-    fontWeight: 'bold',
-    
+    fontWeight: 'bold'
   },
 
-  valor: {
+  apValor: {
     fontSize: 16,
-    color: '#fff',
+    marginHorizontal: 80,
     marginBottom: 2,
+    color: '#fff',
 
   },
 })

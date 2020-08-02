@@ -7,7 +7,7 @@ const Stack = createStackNavigator();
 import Login from './pages/Login'
 import Detalhes from './pages/Detalhes'
 
-export default function Navigation({ navigation }) {
+export default function Navigation() {
 
   return (
     <>

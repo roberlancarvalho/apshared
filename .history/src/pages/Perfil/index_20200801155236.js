@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, Image, ImageBackground, TextInput, TouchableOpacity } from 'react-native'
-// import { FontAwesome } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 
 import styles from './styles'
 
@@ -19,13 +19,14 @@ export default function Perfil() {
 
         <View style={styles.conteudo}>
           <Text style={styles.title}>Perfil de usuário</Text>
-          <Image source={require('../../assets/avatar.jpg')} style={styles.avatar} />
         </View>
+
+        <Image source={require('../../assets/avatar.jpg')} style={styles.avatar} />
 
         <View style={styles.sobre}>
           <Text style={styles.propriedade}>Nome:</Text>
           <Text style={styles.valor}>Roberlan Oliveira de Carvalho</Text>
-
+          
           <Text style={styles.propriedade}>Idade:</Text>
           <Text style={styles.valor}>32</Text>
 

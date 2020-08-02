@@ -45,27 +45,31 @@ export default StyleSheet.create({
 
   avatar: {
     position: 'absolute',
+    marginTop: 200,
     width: 110, 
     height: 110, 
     borderRadius: 400/ 2,
   },
 
   sobre:{
+    // flexDirection: 'column',
+    // justifyContent: 'space-between',
     alignItems: 'center',
     marginTop: 5,
+    marginHorizontal: 5,
   },
 
-  propriedade: {
+  apPropriedade: {
     fontSize: 16,
     color: '#fff',
-    fontWeight: 'bold',
-    
+    fontWeight: 'bold'
   },
 
-  valor: {
+  apValor: {
     fontSize: 16,
-    color: '#fff',
+    marginHorizontal: 80,
     marginBottom: 2,
+    color: '#fff',
 
   },
 })

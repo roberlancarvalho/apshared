@@ -2,6 +2,7 @@ import React from 'react'
 import { AntDesign } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native'
 import { View, FlatList, Image, Text, TouchableOpacity } from 'react-native'
+import Navigation from '../../navigation'
 
 import logoImg from '../../assets/logo.png'
 import apImg from '../../assets/aps/ap1.png'
@@ -52,6 +53,7 @@ export default function Home() {
               <TouchableOpacity
                 style={styles.detailsButton}
                 onPress={navigateToDetalhe}
+                Navigation
               >
 
                 <Text style={styles.detailsButtonText}>Ver detalhes da vaga</Text>

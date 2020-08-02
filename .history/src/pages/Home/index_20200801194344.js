@@ -2,11 +2,14 @@ import React from 'react'
 import { AntDesign } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native'
 import { View, FlatList, Image, Text, TouchableOpacity } from 'react-native'
+import { createStackNavigator } from '@react-navigation/stack';
 
 import logoImg from '../../assets/logo.png'
 import apImg from '../../assets/aps/ap1.png'
 
 import styles from './styles'
+
+const Stack = createStackNavigator();
 
 export default function Home() {
   const navigation = useNavigation()
@@ -16,7 +19,12 @@ export default function Home() {
   }
 
   return (
+
     <>
+      <Stack.Navigator>
+        <Stack.Screen name="Detalhes" component={Detalhes} />
+      </Stack.Navigator>
+
       <View style={styles.container}>
         <View style={styles.header}>
           <Image style={styles.logo} source={logoImg} />

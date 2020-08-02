@@ -43,7 +43,7 @@ export default function Routes() {
                 iconName = focused ? 'ios-settings' : 'ios-settings';
               }
 
-              return <Ionicons name={iconName} size={32} color={color} />;
+              return <Ionicons name={iconName} size={30} color={color} />;
             },
           })}
           tabBarOptions={{

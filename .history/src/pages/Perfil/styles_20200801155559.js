@@ -53,19 +53,20 @@ export default StyleSheet.create({
   sobre:{
     alignItems: 'center',
     marginTop: 5,
+    marginHorizontal: 5,
   },
 
   propriedade: {
     fontSize: 16,
     color: '#fff',
-    fontWeight: 'bold',
-    
+    fontWeight: 'bold'
   },
 
   valor: {
     fontSize: 16,
+    marginHorizontal: 80,
+    marginBottom: 6,
     color: '#fff',
-    marginBottom: 2,
 
   },
 })

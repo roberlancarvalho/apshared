@@ -14,6 +14,7 @@ import { AntDesign } from '@expo/vector-icons';
 import styles from './styles'
 export default class Login extends Component {
 
+
   logar = () => {
     Alert.alert("AP Shared", "Login realizado com sucesso")
 
