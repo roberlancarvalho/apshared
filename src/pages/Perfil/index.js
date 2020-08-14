@@ -4,13 +4,14 @@ import { Ionicons, Entypo } from '@expo/vector-icons';
 // import { FontAwesome } from '@expo/vector-icons';
 
 import styles from './styles'
+import { useNavigation } from '@react-navigation/native';
 
 export default function Perfil() {
-  seguir = () => {
-    Alert.alert("Você está seguindo Roberlan agora")
-  }
-  enviarMensagem = () => {
-    Alert.alert("Enviar mensagem para Roberlan")
+
+  const navigation = useNavigation()
+
+  function navigateToMensagem() {
+    navigation.navigate('Mensagem')
   }
 
   return (
@@ -48,7 +49,7 @@ export default function Perfil() {
 
           <TouchableOpacity
             style={styles.botaoSeguir}
-            onPress={() => { this.seguir() }}
+            onPress={() => { }}
           >
             <Entypo style={styles.icone} name="edit" />
             <Text style={styles.botaoText}>EDITAR INFORMAÇÕES
@@ -58,11 +59,10 @@ export default function Perfil() {
 
           <TouchableOpacity
             style={styles.botaoEnviar}
-            onPress={() => { this.enviarMensagem() }}
+            onPress={() => { navigateToMensagem() }}
           >
           <Ionicons style={styles.icone} name="md-chatboxes" />
-            <Text style={styles.botaoText}>MINHAS MENSAGENS
-            </Text>
+            <Text style={styles.botaoText}>MINHAS MENSAGENS</Text>
           </TouchableOpacity>
         </View>
 

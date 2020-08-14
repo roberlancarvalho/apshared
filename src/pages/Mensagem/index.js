@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, Image, FlatList, ImageBackground, TextInput, TouchableOpacity } from 'react-native'
-import { FontAwesome, AntDesign } from '@expo/vector-icons';
+import { FontAwesome, Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native'
 
 import styles from './styles'
@@ -12,6 +12,10 @@ export default function Mensagem() {
 
   const navigation = useNavigation()
 
+  function navigateBack() {
+    navigation.goBack()
+  }
+
   function navigateToDetalhe() {
     navigation.navigate('Detalhes')
   }
@@ -19,6 +23,13 @@ export default function Mensagem() {
   return (
     <>
       <View style={styles.container}>
+
+        <View style={styles.seta}>
+          <TouchableOpacity onPress={navigateBack} >
+            <Feather name="arrow-left" size={28} color="#62b0d3" />
+          </TouchableOpacity>
+        </View>
+
         <View style={styles.formEnviar}>
           <TextInput
             style={styles.inputEnviar}

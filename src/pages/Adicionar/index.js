@@ -3,9 +3,9 @@ import { View, Text, Picker, Image, ImageBackground, FlatList, TouchableOpacity,
 import Input from '../../components/Input';
 import { Form } from '@unform/mobile';
 
-import styles from './styles'
+import styles from './styles';
 
-export default function Add() {
+export default function Adicionar() {
   const [selectedValue, setSelectedValue] = useState("Selecionar bairro")
 
   const formRef = useRef(null);

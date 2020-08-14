@@ -1,6 +1,6 @@
 import React from 'react'
-import { AntDesign } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native'
+import { AntDesign } from '@expo/vector-icons';
 import { View, FlatList, Image, Text, TouchableOpacity } from 'react-native'
 
 import logoImg from '../../assets/logo.png'

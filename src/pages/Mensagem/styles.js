@@ -9,6 +9,13 @@ export default StyleSheet.create({
     paddingTop: Constants.statusBarHeight + 16,
   },
 
+  seta: {
+    flexDirection: 'row',
+    marginLeft: -350,
+    justifyContent: "space-between",
+    marginTop: -15,
+  },
+
   formEnviar: {
     position: 'absolute',
     bottom: 20,

@@ -18,12 +18,14 @@ export default StyleSheet.create({
   logo: {
     width: 170,
     height: 70,
+    marginTop: -15,
   },
 
-  icone: {
-    flexDirection: 'column',
+  seta: {
+    flexDirection: 'row',
     marginLeft: -350,
     justifyContent: "space-between",
+    marginTop: -15,
   },
 
   headerText: {
@@ -88,6 +90,6 @@ export default StyleSheet.create({
   detailsButtonText: {
     color: '#62b0d3',
     fontSize: 15,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   }
 })

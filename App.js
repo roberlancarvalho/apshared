@@ -1,16 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { StatusBar } from 'react-native'
-import Routes from './src/routes'
-// import Navigation from './src/navigation'
+import AppStack from './src/routes/AppStack'
 
-export default class App extends Component {
-  render() {
-    return (
-      <>
-        <Routes />
-        <StatusBar barStyle="light-content" backgroundColor="#272e39" />
-        {/* <Navigation /> */}
-      </>
-    )
-  }
+
+export default function App() {
+  return (
+    <>
+      <AppStack />
+      <StatusBar barStyle="light-content" backgroundColor="#272e39" />
+    </>
+  )
 }

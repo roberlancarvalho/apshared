@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native'
 import { View, Image, Text, TouchableOpacity } from 'react-native'
 
 import logoImg from '../../assets/logo.png'
+import apImg from '../../assets/aps/ap1.png'
 
 import styles from './styles'
 
@@ -17,24 +18,27 @@ export default function Detalhes() {
   return (
     <View style={styles.container}>
 
+      <View style={styles.seta}>
+        <TouchableOpacity onPress={navigateBack} >
+          <Feather name="arrow-left" size={28} color="#62b0d3" />
+        </TouchableOpacity>
+      </View>
+
       <View style={styles.header}>
         <Image style={styles.logo} source={logoImg} />
       </View>
 
-      <View style={styles.icone}>
-        <TouchableOpacity onPress={navigateBack} >
-          <Feather name="arrow-left" size={32} color="#62b0d3" />
-        </TouchableOpacity>
-      </View>
 
       <Text style={styles.title}>Vaga em Apartamento</Text>
       <Text style={styles.description}>Local: Centro de Quixadá</Text>
 
       <View style={styles.apList}>
         <View style={styles.ap}>
-          {/* <Image style={styles.apImg}
+
+          <Text style={styles.apTitle}>Ap</Text>
+          <Image style={styles.apImg}
             source={apImg}
-          /> */}
+          />
 
           <TouchableOpacity
             style={styles.detailsButton}
