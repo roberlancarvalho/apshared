@@ -9,39 +9,46 @@ export default StyleSheet.create({
     paddingTop: Constants.statusBarHeight + 1,
   },
 
-  imgBackground: {
-    width: '100%',
-    height: 140,
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'absolute',
-  },
-
   logo: {
-    width: 170,
-    height: 70,
-    position: 'absolute',
+    width: 190,
+    height: 82,
     justifyContent: 'center',
     zIndex: 5,
-    marginTop: 30,
+    paddingTop: 10,
+    marginBottom: 75,
   },
 
   conteudo: {
-    marginTop: 50,
-    paddingTop: 130,
-    flex: 1,
+    marginTop: 90,
+    paddingTop: 20,
     justifyContent: 'center',
     alignItems: 'center',
-
   },
 
-  title: {
+  topo: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+
+  fazerLogin: {
     fontSize: 20,
-    marginBottom: 4,
-    marginTop: -70,
     color: '#fff',
-    fontWeight: 'bold'
+    paddingRight: 105,
+    fontWeight: 'bold',
+    marginEnd: 5,
+    alignSelf: 'flex-start'
+  },
+
+  criarConta: {
+    marginEnd: 5,
+    alignSelf: 'flex-end',
+  },
+
+  criarContaTexto: {
+    fontSize: 16,
+    color: '#62b0d3',
+    fontWeight: 'bold',
   },
 
   form: {
@@ -49,62 +56,74 @@ export default StyleSheet.create({
   },
 
   input: {
-    marginBottom: 5,
+    marginBottom: 4,
     marginTop: 60,
     marginTop: 10,
     padding: 10,
     width: 340,
-    height: 42,
+    height: 44,
     backgroundColor: '#fff',
-    fontSize: 16,
-    borderRadius: 3,
-    paddingLeft: 6,
-
+    fontSize: 14,
+    borderRadius: 8,
+    paddingLeft: 21,
   },
 
-  // inputSenha: {
-  //   flex: 1,
-  //   flexDirection: 'row',
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-  //   backgroundColor: '#fff'
-  // },
+  label: {
+    marginLeft: 2,
+    color: '#fff',
+  },
 
-  recuperar: {
+  recuperarTexto: {
     paddingBottom: 10,
+    fontSize: 14,
+    color: '#fff',
+    fontWeight: 'bold',
   },
 
   links: {
     justifyContent: 'space-between',
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 
-  link: {
-    fontSize: 14,
-    color: '#62b0d3',
-    fontWeight: 'bold',
-    paddingHorizontal: 36,
+  recuperar: {
+    paddingTop: 4,
+    marginBottom: 4,
+    alignSelf: 'flex-end',
+    marginLeft: 40
+  },
+
+  checkboxContainer: {
+    flexDirection: "row",
+    alignItems: 'center',
+    marginBottom: 10,
+    marginRight: 65,
+    marginLeft: -10,
+  },
+
+  checkbox: {
+    alignSelf: "center",
   },
 
   botao: {
     width: 340,
-    height: 42,
+    height: 44,
     backgroundColor: '#62b0d3',
-    marginTop: 10,
-    borderRadius: 3,
+    marginTop: 15,
+    borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'center',
   },
 
   botaoText: {
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: 'bold',
     color: '#fff',
   },
 
   alternativaLogin: {
     fontSize: 14,
+    marginTop: 10,
     lineHeight: 24,
     color: '#ABABAB',
   },
@@ -114,13 +133,22 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
     paddingVertical: 20,
+
   },
 
   facebook: {
-    paddingHorizontal: 10,
+    padding: 10,
+    margin: 10,
+    height: 40,
+    width: 40,
+    resizeMode: 'stretch',
   },
 
   google: {
-    paddingHorizontal: 10,
+    padding: 10,
+    margin: 10,
+    height: 40,
+    width: 40,
+    resizeMode: 'stretch',
   },
 })

@@ -39,35 +39,18 @@ export default StyleSheet.create({
   },
 
   title: {
-    fontSize: 26,
-    marginBottom: 2,
-    marginTop: 12,
+    fontSize: 22,
+    marginBottom: 10,
+    marginTop: 30,
     color: '#fff',
     fontWeight: 'bold'
   },
 
-  description: {
-    fontSize: 14,
-    lineHeight: 24,
-    color: '#ABABAB'
-  },
-
   apImg: {
-    width: 300,
-    height: 140,
-    borderRadius: 8,
-  },
-
-  apList: {
-    marginTop: 16,
-  },
-
-  ap: {
-    padding: 40,
-    marginBottom: 10,
-    borderRadius: 8,
-    backgroundColor: '#3D4859',
-    // marginBottom: 16
+    width: 150,
+    height: 120,
+    margin: 10,
+    flexDirection: 'row',
   },
 
   apPropriedade: {
@@ -85,7 +68,8 @@ export default StyleSheet.create({
   detailsButton: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginTop: 10,
   },
   detailsButtonText: {
     color: '#62b0d3',

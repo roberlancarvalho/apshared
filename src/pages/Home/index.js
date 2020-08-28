@@ -36,14 +36,12 @@ export default function Home() {
           keyExtractor={ap => String(ap)}
           renderItem={() => (
 
-
             <View style={styles.ap}>
 
               <View style={styles.sobre}>
                 <Text style={styles.apPropriedade}>Quantidade de vagas:</Text>
                 <Text style={styles.apValor}>1</Text>
               </View>
-
 
               <Image style={styles.apImg}
                 source={apImg}
@@ -55,7 +53,7 @@ export default function Home() {
               >
 
                 <Text style={styles.detailsButtonText}>Ver detalhes da vaga</Text>
-                <AntDesign name="questioncircle" size={22} color="#62b0d3" />
+                <AntDesign name="questioncircle" size={18} color="#62b0d3" />
               </TouchableOpacity>
 
             </View>
@@ -84,25 +82,13 @@ export default function Home() {
                 source={apImg}
               />
 
-              {/* <Text style={styles.apPropriedade}>Local:</Text>
-            <Text style={styles.apValor}>Centro</Text>
-
-            <Text style={styles.apPropriedade}>Valor:</Text>
-            <Text style={styles.apValor}>R$ 150,00</Text>
-
-            <Text style={styles.apPropriedade}>Vagas:</Text>
-            <Text style={styles.apValor}>1</Text>
-
-            <Text style={styles.apPropriedade}>Morador:</Text>
-            <Text style={styles.apValor}>Fulano</Text> */}
-
               <TouchableOpacity
                 style={styles.detailsButton}
                 onPress={navigateToDetalhe}
               >
 
                 <Text style={styles.detailsButtonText}>Ver detalhes da vaga</Text>
-                <AntDesign name="questioncircle" size={22} color="#62b0d3" />
+                <AntDesign name="questioncircle" size={18} color="#62b0d3" />
               </TouchableOpacity>
 
             </View>

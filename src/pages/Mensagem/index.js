@@ -26,7 +26,7 @@ export default function Mensagem() {
 
         <View style={styles.seta}>
           <TouchableOpacity onPress={navigateBack} >
-            <Feather name="arrow-left" size={28} color="#62b0d3" />
+            <Feather name="arrow-left" size={26} color="#62b0d3" />
           </TouchableOpacity>
         </View>
 

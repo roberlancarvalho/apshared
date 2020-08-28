@@ -15,12 +15,16 @@ export default function Detalhes() {
     navigation.goBack()
   }
 
+  function navigateToMorador() {
+    navigation.navigate('Morador')
+  }
+
   return (
     <View style={styles.container}>
 
       <View style={styles.seta}>
         <TouchableOpacity onPress={navigateBack} >
-          <Feather name="arrow-left" size={28} color="#62b0d3" />
+          <Feather name="arrow-left" size={26} color="#62b0d3" />
         </TouchableOpacity>
       </View>
 
@@ -28,29 +32,19 @@ export default function Detalhes() {
         <Image style={styles.logo} source={logoImg} />
       </View>
 
+      <Text style={styles.title}>Detalhes do AP</Text>
 
-      <Text style={styles.title}>Vaga em Apartamento</Text>
-      <Text style={styles.description}>Local: Centro de Quixadá</Text>
+      <Image style={styles.apImg}
+        source={apImg}
+      />
+      <Image style={styles.apImg}
+        source={apImg}
+      />
 
-      <View style={styles.apList}>
-        <View style={styles.ap}>
-
-          <Text style={styles.apTitle}>Ap</Text>
-          <Image style={styles.apImg}
-            source={apImg}
-          />
-
-          <TouchableOpacity
-            style={styles.detailsButton}
-            onPress={() => { }}
-          >
-
-            <Text style={styles.detailsButtonText}>Conhecer Fulano </Text>
-            <Octicons name="person" size={24} color="#62b0d3" />
-          </TouchableOpacity>
-
-        </View>
-      </View>
+      <TouchableOpacity style={styles.detailsButton} onPress={navigateToMorador()}>
+        <Text style={styles.detailsButtonText}>Conhecer Roberlan </Text>
+        <Octicons name="person" size={20} color="#62b0d3" />
+      </TouchableOpacity>
 
     </View>
   )

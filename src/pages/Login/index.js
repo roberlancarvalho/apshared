@@ -1,25 +1,30 @@
-import React, { Component } from 'react'
+import React, { useState, Component } from 'react'
 import {
   Text,
   View,
   Image,
   TextInput,
   TouchableOpacity,
-  ImageBackground
+  ImageBackground,
+  CheckBox
 } from 'react-native'
-import { AntDesign, Feather } from '@expo/vector-icons'
 // import PasswordInputText from 'react-native-hide-show-password-input';
 import { useNavigation } from '@react-navigation/native'
-
 
 import styles from './styles'
 
 function Login() {
 
+  const [isSelected, setSelection] = useState(false);
+
   const navigation = useNavigation()
 
   function navigateToHome() {
     navigation.navigate('Home')
+  }
+  
+  function navigateToCadastro() {
+    navigation.navigate('Cadastro')
   }
 
   return (
@@ -27,46 +32,58 @@ function Login() {
 
       <View style={styles.container} >
 
-        <Image source={require('../../assets/logo.png')} style={styles.logo} />
-
-        <ImageBackground style={styles.imgBackground}
+        {/* <ImageBackground style={styles.imgBackground}
           resizeMode='cover'
           source={require('../../assets/ap2.png')}>
-        </ImageBackground>
-
+        </ImageBackground> */}
 
         <View style={styles.conteudo}>
 
-          <Text style={styles.title}>Realize seu login: </Text>
+          <Image source={require('../../assets/logo.png')} style={styles.logo} />
+
+          <View style={styles.topo}>
+            <Text style={styles.fazerLogin}>Fazer login: </Text>
+            
+            <TouchableOpacity
+              style={styles.criarConta}
+              onPress={() => { navigateToCadastro() }}
+            >
+              <Text style={styles.criarContaTexto}>Criar conta</Text>
+            </TouchableOpacity>
+          </View>
+
 
           <TextInput
             style={styles.input}
-            placeholder="Insira seu e-mail"
+            placeholder="E-mail"
           />
 
           <View style={styles.inputSenha}>
             <TextInput
               style={styles.input}
               secureTextEntry={true}
-              placeholder="Insira sua senha"
+              placeholder="Senha"
             />
             {/* <Feather style={styles.senhaIcon} name="eye-off" size={20} color="black" /> */}
           </View>
 
           <View style={styles.links}>
+
+            <View style={styles.checkboxContainer}>
+              <CheckBox
+                value={isSelected}
+                onValueChange={setSelection}
+                style={styles.checkbox}
+                tintColors={{ true: '#62b0d3', false: '#fff' }}
+              />
+              <Text style={styles.label}>Lembrar-me</Text>
+            </View>
+
             <TouchableOpacity
               style={styles.recuperar}
               onPress={() => { }}
             >
-              <Text style={styles.link}>Esqueci minha senha</Text>
-
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              style={styles.recuperar}
-              onPress={() => { }}
-            >
-              <Text style={styles.link}>Realizar cadastro</Text>
+              <Text style={styles.recuperarTexto}>Esqueci a senha</Text>
 
             </TouchableOpacity>
           </View>
@@ -82,8 +99,22 @@ function Login() {
           <Text style={styles.alternativaLogin}>Fazer login com:</Text>
 
           <View style={styles.sociaisIcons}>
-            <AntDesign style={styles.facebook} name="facebook-square" size={45} color="#62b0d3" />
-            <AntDesign style={styles.google} name="google" size={45} color="#62b0d3" />
+
+            <TouchableOpacity>
+              <Image style={styles.facebook} source={require('../../assets/icons/facebook.png')} />
+            </TouchableOpacity>
+
+            <TouchableOpacity>
+              <Image style={styles.google} source={require('../../assets/icons/google.png')} />
+            </TouchableOpacity>
+
+            {/* <TouchableOpacity>
+              <AntDesign style={styles.facebook} name="facebook-square" size={45} color="#62b0d3" />
+            </TouchableOpacity>
+
+            <TouchableOpacity>
+              <AntDesign style={styles.google} name="google" size={45} color="#62b0d3" />
+            </TouchableOpacity> */}
           </View>
 
         </View>

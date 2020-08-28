@@ -6,7 +6,8 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: '#272e39',
     alignItems: 'center',
-    paddingTop: Constants.statusBarHeight + 1,
+    justifyContent: 'space-between',
+    paddingTop: Constants.statusBarHeight + 16,
   },
 
   imgBackground: {
@@ -28,74 +29,79 @@ export default StyleSheet.create({
   },
 
   conteudo: {
-    marginTop: -90,
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    position: 'absolute',
+
   },
 
   title: {
-    position: 'absolute',
     fontSize: 20,
     marginBottom: 4,
-    marginTop: 150,
+    marginTop: 200,
     color: '#fff',
     fontWeight: 'bold'
   },
 
-  description: {
-    fontSize: 13,
-    marginTop: 165,
-    lineHeight: 14,
-    color: '#ABABAB',
+  avatar: {
+    position: 'absolute',
+    marginTop: 200,
+    width: 110,
+    height: 110,
+    borderRadius: 400 / 2,
   },
 
-  lista: {
-    marginTop: 30,
-    backgroundColor: '#272e39',
-    paddingHorizontal: 30,
-
+  sobre: {
+    alignItems: 'center',
+    marginTop: 280,
+    marginBottom: 10,
   },
 
-  form: {
-   alignItems: 'center',
-  },
-
-  input: {
-    marginBottom: 4,
-    marginTop: 10,
-    padding: 10,
-    width: 340,
-    height: 42,
-    backgroundColor: '#fff',
+  propriedade: {
     fontSize: 16,
-    borderRadius: 5,
+    color: '#fff',
+    fontWeight: 'bold',
+
   },
 
-  selecao: {
-    height: 42,
-    width: 340,
-    color: 'black',
-    backgroundColor: '#fff',
-    padding: 5,
-    marginTop: 5,
+  valor: {
+    fontSize: 16,
+    color: '#fff',
+    marginBottom: 2,
+
   },
 
-  botao: {
+  botaoSeguir: {
     width: 340,
     height: 42,
     backgroundColor: '#62b0d3',
     marginTop: 10,
-    marginVertical: 60,
     borderRadius: 3,
     alignItems: 'center',
     justifyContent: 'center',
+    flexDirection: 'row',
+  },
+
+  botaoEnviar: {
+    width: 340,
+    height: 42,
+    backgroundColor: '#3D4859', // #c5d6e0
+    marginTop: 10,
+    borderRadius: 3,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'row',
   },
 
   botaoText: {
     fontSize: 16,
     fontWeight: 'bold',
     color: '#fff',
+  },
+
+  icone: {
+    marginHorizontal: 10,
+    fontSize: 22,
+    color: 'white'
   },
 })

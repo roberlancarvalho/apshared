@@ -45,9 +45,9 @@ export default StyleSheet.create({
   },
 
   apImg: {
-    width: 300,
-    height: 140,
-    borderRadius: 8,
+    width: 230,
+    height: 130,
+    marginTop: 12,
   },
 
   tituloBloco:{
@@ -64,10 +64,10 @@ export default StyleSheet.create({
   },
 
   ap: {
-    paddingHorizontal: 15,
-    paddingVertical: -10,
+    paddingHorizontal: 5,
+    // paddingVertical: -10,
     // marginBottom: 5,
-    borderRadius: 5,
+    // borderRadius: 5,
     backgroundColor: '#3D4859',
     margin: 5,
   },

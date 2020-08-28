@@ -45,52 +45,67 @@ export default StyleSheet.create({
 
   avatar: {
     position: 'absolute',
-    marginTop: 200,
-    width: 110,
-    height: 110,
+    marginTop: 190,
+    width: 90,
+    height: 90,
     borderRadius: 400 / 2,
   },
 
   sobre: {
-    alignItems: 'center',
-    marginTop: 280,
-    marginBottom: 10,
+    marginTop: 250,
+    flexWrap: 'wrap',
   },
 
   propriedade: {
     fontSize: 16,
     color: '#fff',
     fontWeight: 'bold',
-
+    height: 30,
   },
 
   valor: {
     fontSize: 16,
     color: '#fff',
-    marginBottom: 2,
-
+    fontWeight: 'normal',
+    height: 30,
   },
 
-  botaoSeguir: {
+  face: {
+    fontSize: 16,
+    color: '#62b0d3',
+    textDecorationLine: 'underline',
+  },
+
+  insta: {
+    fontSize: 16,
+    color: '#62b0d3',
+    textDecorationLine: 'underline',
+  },
+
+  botoes:{
+    paddingTop: 2,
+  },
+
+  botaoEditar: {
     width: 340,
-    height: 42,
+    height: 46,
+    backgroundColor: '#96a0a6', // #c5d6e0
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'row',
+    marginTop: 35,
+  },
+
+  botaoMensagens: {
+    width: 340,
+    height: 46,
     backgroundColor: '#62b0d3',
-    marginTop: 10,
-    borderRadius: 3,
+    borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
-  },
-
-  botaoEnviar: {
-    width: 340,
-    height: 42,
-    backgroundColor: '#3D4859', // #c5d6e0
-    marginTop: 10,
-    borderRadius: 3,
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'row',
+    marginTop: 15,
   },
 
   botaoText: {

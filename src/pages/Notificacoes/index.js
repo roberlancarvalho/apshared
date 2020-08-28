@@ -1,11 +1,9 @@
-import React, { useRef, useState } from 'react'
-import { View, Text, Picker, Image, ImageBackground, FlatList, TouchableOpacity, ScrollView } from 'react-native'
-import Input from '../../components/Input';
-import { Form } from '@unform/mobile';
+import React from 'react'
+import { View, Text, Image, ImageBackground } from 'react-native'
 
 import styles from './styles'
 
-export default function Config() {
+export default function Notificacoes() {
   return (
     <>
       <View style={styles.container}>
@@ -18,7 +16,7 @@ export default function Config() {
         </ImageBackground>
 
         <View style={styles.conteudo}>
-          <Text style={styles.title}>Configurações</Text>
+          <Text style={styles.title}>Notificações</Text>
         </View>
 
       </View>
